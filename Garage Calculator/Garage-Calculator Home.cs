@@ -12,6 +12,7 @@ namespace Garage_Calculator
 {
     public partial class MainPage : Form
     {
+        //Basic Sizes
         int width;
         int legnth;
         int height;
@@ -22,7 +23,7 @@ namespace Garage_Calculator
         double gablearea;
 
 
-        // OTehrs
+        //Conversions
         int perimiter;
         double factor75 = 0.75;
 

@@ -511,11 +511,11 @@
             // debugtest
             // 
             this.debugtest.AutoSize = true;
-            this.debugtest.Location = new System.Drawing.Point(361, 354);
+            this.debugtest.Location = new System.Drawing.Point(3, 490);
             this.debugtest.Name = "debugtest";
-            this.debugtest.Size = new System.Drawing.Size(41, 13);
+            this.debugtest.Size = new System.Drawing.Size(92, 13);
             this.debugtest.TabIndex = 13;
-            this.debugtest.Text = "label11";
+            this.debugtest.Text = "Debug Test Label";
             // 
             // label9
             // 
