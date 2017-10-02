@@ -31,6 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Main = new System.Windows.Forms.TabPage();
+            this.CBwaste = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -89,47 +94,42 @@
             this.debugwidth = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.labelEwindowheader = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelEwallply = new System.Windows.Forms.Label();
             this.labelEanchorbolts = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.labelEsillplates = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.labelEsillgasket = new System.Windows.Forms.Label();
-            this.labelEstudsize = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelEstudsize2 = new System.Windows.Forms.Label();
+            this.labelEgarageheader = new System.Windows.Forms.Label();
             this.labelEstuds = new System.Windows.Forms.Label();
+            this.labelEdoorheader = new System.Windows.Forms.Label();
+            this.labelEstudsize = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.labelEstudheight = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.labelEsillgasket = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.labelEsillplates = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.labelEwindowheader = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.labelEtrusses = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.button2 = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.labelEtrusses = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.CBwaste = new System.Windows.Forms.ComboBox();
-            this.labelEstudheight = new System.Windows.Forms.Label();
-            this.labelEstudsize2 = new System.Windows.Forms.Label();
-            this.labelEdoorheader = new System.Windows.Forms.Label();
-            this.labelEgarageheader = new System.Windows.Forms.Label();
-            this.labelEwallply = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -202,6 +202,59 @@
             this.Main.Text = "Main";
             this.Main.UseVisualStyleBackColor = true;
             this.Main.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // CBwaste
+            // 
+            this.CBwaste.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.CBwaste.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBwaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBwaste.FormattingEnabled = true;
+            this.CBwaste.Items.AddRange(new object[] {
+            "5%",
+            "7%",
+            "10%",
+            "15%"});
+            this.CBwaste.Location = new System.Drawing.Point(826, 415);
+            this.CBwaste.Name = "CBwaste";
+            this.CBwaste.Size = new System.Drawing.Size(121, 33);
+            this.CBwaste.TabIndex = 57;
+            this.CBwaste.SelectedIndexChanged += new System.EventHandler(this.CBwaste_SelectedIndexChanged);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(177, 61);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(28, 13);
+            this.label36.TabIndex = 56;
+            this.label36.Text = "Feet";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(177, 35);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(28, 13);
+            this.label35.TabIndex = 55;
+            this.label35.Text = "Feet";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(175, 9);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(28, 13);
+            this.label34.TabIndex = 54;
+            this.label34.Text = "Feet";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(175, 88);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(39, 13);
+            this.label33.TabIndex = 53;
+            this.label33.Text = "Inches";
             // 
             // label29
             // 
@@ -520,11 +573,12 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(637, 283);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(826, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(151, 77);
             this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
+            this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -751,240 +805,15 @@
             this.tabPage3.Text = "Lumber Estimate";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // labelEwindowheader
+            // label40
             // 
-            this.labelEwindowheader.AutoSize = true;
-            this.labelEwindowheader.Location = new System.Drawing.Point(4, 85);
-            this.labelEwindowheader.Name = "labelEwindowheader";
-            this.labelEwindowheader.Size = new System.Drawing.Size(0, 13);
-            this.labelEwindowheader.TabIndex = 14;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(316, 85);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(64, 20);
-            this.label20.TabIndex = 13;
-            this.label20.Text = "LF Window Header";
-            // 
-            // labelEanchorbolts
-            // 
-            this.labelEanchorbolts.AutoSize = true;
-            this.labelEanchorbolts.Location = new System.Drawing.Point(4, 1);
-            this.labelEanchorbolts.Name = "labelEanchorbolts";
-            this.labelEanchorbolts.Size = new System.Drawing.Size(0, 13);
-            this.labelEanchorbolts.TabIndex = 12;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(316, 1);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(67, 13);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "Anchor Bolts";
-            // 
-            // label15
-            // 
-            this.label15.Location = new System.Drawing.Point(212, 64);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 20);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "16\'";
-            // 
-            // labelEsillplates
-            // 
-            this.labelEsillplates.AutoSize = true;
-            this.labelEsillplates.Location = new System.Drawing.Point(4, 64);
-            this.labelEsillplates.Name = "labelEsillplates";
-            this.labelEsillplates.Size = new System.Drawing.Size(0, 13);
-            this.labelEsillplates.TabIndex = 8;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(316, 22);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(34, 13);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "Studs";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(316, 64);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(36, 13);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "Plates";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(316, 43);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 13);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Roll Sill Gasket";
-            // 
-            // labelEsillgasket
-            // 
-            this.labelEsillgasket.AutoSize = true;
-            this.labelEsillgasket.Location = new System.Drawing.Point(4, 43);
-            this.labelEsillgasket.Name = "labelEsillgasket";
-            this.labelEsillgasket.Size = new System.Drawing.Size(0, 13);
-            this.labelEsillgasket.TabIndex = 4;
-            // 
-            // labelEstudsize
-            // 
-            this.labelEstudsize.AutoSize = true;
-            this.labelEstudsize.Location = new System.Drawing.Point(108, 22);
-            this.labelEstudsize.Name = "labelEstudsize";
-            this.labelEstudsize.Size = new System.Drawing.Size(0, 13);
-            this.labelEstudsize.TabIndex = 2;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(192, 64);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 13);
-            this.label10.TabIndex = 1;
-            // 
-            // labelEstuds
-            // 
-            this.labelEstuds.AutoSize = true;
-            this.labelEstuds.Location = new System.Drawing.Point(4, 22);
-            this.labelEstuds.Name = "labelEstuds";
-            this.labelEstuds.Size = new System.Drawing.Size(0, 13);
-            this.labelEstuds.TabIndex = 0;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 561);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1022, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripProgressBar1
-            // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
-            this.toolStripProgressBar1.Value = 100;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(828, 561);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 22);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "About Garage Calculator";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(316, 106);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(83, 13);
-            this.label30.TabIndex = 17;
-            this.label30.Text = "LF Door Header";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(316, 127);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(86, 20);
-            this.label31.TabIndex = 18;
-            this.label31.Text = "LF Garage Door Header";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(316, 148);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(81, 13);
-            this.label32.TabIndex = 19;
-            this.label32.Text = "Sheets Wall Ply";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(175, 88);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(39, 13);
-            this.label33.TabIndex = 53;
-            this.label33.Text = "Inches";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(175, 9);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(28, 13);
-            this.label34.TabIndex = 54;
-            this.label34.Text = "Feet";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(177, 35);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(28, 13);
-            this.label35.TabIndex = 55;
-            this.label35.Text = "Feet";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(177, 61);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(28, 13);
-            this.label36.TabIndex = 56;
-            this.label36.Text = "Feet";
-            // 
-            // labelEtrusses
-            // 
-            this.labelEtrusses.AutoSize = true;
-            this.labelEtrusses.Location = new System.Drawing.Point(34, 375);
-            this.labelEtrusses.Name = "labelEtrusses";
-            this.labelEtrusses.Size = new System.Drawing.Size(41, 13);
-            this.labelEtrusses.TabIndex = 21;
-            this.labelEtrusses.Text = "label37";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(81, 375);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(84, 13);
-            this.label37.TabIndex = 22;
-            this.label37.Text = "Regular Trusses";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(33, 404);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(54, 13);
-            this.label38.TabIndex = 23;
-            this.label38.Text = "4 Ladders";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(33, 437);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(75, 13);
-            this.label39.TabIndex = 24;
-            this.label39.Text = "2 Drop Gables";
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(191, 12);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(52, 20);
+            this.label40.TabIndex = 26;
+            this.label40.Text = "Walls";
             // 
             // tableLayoutPanel1
             // 
@@ -1031,40 +860,21 @@
             this.tableLayoutPanel1.TabIndex = 25;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // label40
+            // labelEwallply
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(191, 12);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(52, 20);
-            this.label40.TabIndex = 26;
-            this.label40.Text = "Walls";
+            this.labelEwallply.AutoSize = true;
+            this.labelEwallply.Location = new System.Drawing.Point(4, 148);
+            this.labelEwallply.Name = "labelEwallply";
+            this.labelEwallply.Size = new System.Drawing.Size(0, 13);
+            this.labelEwallply.TabIndex = 31;
             // 
-            // CBwaste
+            // labelEanchorbolts
             // 
-            this.CBwaste.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.CBwaste.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBwaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBwaste.FormattingEnabled = true;
-            this.CBwaste.Items.AddRange(new object[] {
-            "5%",
-            "7%",
-            "10%",
-            "15%"});
-            this.CBwaste.Location = new System.Drawing.Point(826, 415);
-            this.CBwaste.Name = "CBwaste";
-            this.CBwaste.Size = new System.Drawing.Size(121, 33);
-            this.CBwaste.TabIndex = 57;
-            this.CBwaste.SelectedIndexChanged += new System.EventHandler(this.CBwaste_SelectedIndexChanged);
-            // 
-            // labelEstudheight
-            // 
-            this.labelEstudheight.AutoSize = true;
-            this.labelEstudheight.Location = new System.Drawing.Point(212, 22);
-            this.labelEstudheight.Name = "labelEstudheight";
-            this.labelEstudheight.Size = new System.Drawing.Size(0, 13);
-            this.labelEstudheight.TabIndex = 27;
+            this.labelEanchorbolts.AutoSize = true;
+            this.labelEanchorbolts.Location = new System.Drawing.Point(4, 1);
+            this.labelEanchorbolts.Name = "labelEanchorbolts";
+            this.labelEanchorbolts.Size = new System.Drawing.Size(0, 13);
+            this.labelEanchorbolts.TabIndex = 12;
             // 
             // labelEstudsize2
             // 
@@ -1074,14 +884,6 @@
             this.labelEstudsize2.Size = new System.Drawing.Size(0, 13);
             this.labelEstudsize2.TabIndex = 28;
             // 
-            // labelEdoorheader
-            // 
-            this.labelEdoorheader.AutoSize = true;
-            this.labelEdoorheader.Location = new System.Drawing.Point(4, 106);
-            this.labelEdoorheader.Name = "labelEdoorheader";
-            this.labelEdoorheader.Size = new System.Drawing.Size(0, 13);
-            this.labelEdoorheader.TabIndex = 29;
-            // 
             // labelEgarageheader
             // 
             this.labelEgarageheader.AutoSize = true;
@@ -1090,13 +892,212 @@
             this.labelEgarageheader.Size = new System.Drawing.Size(0, 13);
             this.labelEgarageheader.TabIndex = 30;
             // 
-            // labelEwallply
+            // labelEstuds
             // 
-            this.labelEwallply.AutoSize = true;
-            this.labelEwallply.Location = new System.Drawing.Point(4, 148);
-            this.labelEwallply.Name = "labelEwallply";
-            this.labelEwallply.Size = new System.Drawing.Size(0, 13);
-            this.labelEwallply.TabIndex = 31;
+            this.labelEstuds.AutoSize = true;
+            this.labelEstuds.Location = new System.Drawing.Point(4, 22);
+            this.labelEstuds.Name = "labelEstuds";
+            this.labelEstuds.Size = new System.Drawing.Size(0, 13);
+            this.labelEstuds.TabIndex = 0;
+            // 
+            // labelEdoorheader
+            // 
+            this.labelEdoorheader.AutoSize = true;
+            this.labelEdoorheader.Location = new System.Drawing.Point(4, 106);
+            this.labelEdoorheader.Name = "labelEdoorheader";
+            this.labelEdoorheader.Size = new System.Drawing.Size(0, 13);
+            this.labelEdoorheader.TabIndex = 29;
+            // 
+            // labelEstudsize
+            // 
+            this.labelEstudsize.AutoSize = true;
+            this.labelEstudsize.Location = new System.Drawing.Point(108, 22);
+            this.labelEstudsize.Name = "labelEstudsize";
+            this.labelEstudsize.Size = new System.Drawing.Size(0, 13);
+            this.labelEstudsize.TabIndex = 2;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(316, 22);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(34, 13);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "Studs";
+            // 
+            // labelEstudheight
+            // 
+            this.labelEstudheight.AutoSize = true;
+            this.labelEstudheight.Location = new System.Drawing.Point(212, 22);
+            this.labelEstudheight.Name = "labelEstudheight";
+            this.labelEstudheight.Size = new System.Drawing.Size(0, 13);
+            this.labelEstudheight.TabIndex = 27;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(316, 148);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(81, 13);
+            this.label32.TabIndex = 19;
+            this.label32.Text = "Sheets Wall Ply";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(316, 1);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(67, 13);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "Anchor Bolts";
+            // 
+            // labelEsillgasket
+            // 
+            this.labelEsillgasket.AutoSize = true;
+            this.labelEsillgasket.Location = new System.Drawing.Point(4, 43);
+            this.labelEsillgasket.Name = "labelEsillgasket";
+            this.labelEsillgasket.Size = new System.Drawing.Size(0, 13);
+            this.labelEsillgasket.TabIndex = 4;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(316, 127);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(86, 20);
+            this.label31.TabIndex = 18;
+            this.label31.Text = "LF Garage Door Header";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(316, 43);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(78, 13);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Roll Sill Gasket";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(316, 106);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(83, 13);
+            this.label30.TabIndex = 17;
+            this.label30.Text = "LF Door Header";
+            // 
+            // labelEsillplates
+            // 
+            this.labelEsillplates.AutoSize = true;
+            this.labelEsillplates.Location = new System.Drawing.Point(4, 64);
+            this.labelEsillplates.Name = "labelEsillplates";
+            this.labelEsillplates.Size = new System.Drawing.Size(0, 13);
+            this.labelEsillplates.TabIndex = 8;
+            // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(212, 64);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 20);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "16\'";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(316, 85);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(64, 20);
+            this.label20.TabIndex = 13;
+            this.label20.Text = "LF Window Header";
+            // 
+            // labelEwindowheader
+            // 
+            this.labelEwindowheader.AutoSize = true;
+            this.labelEwindowheader.Location = new System.Drawing.Point(4, 85);
+            this.labelEwindowheader.Name = "labelEwindowheader";
+            this.labelEwindowheader.Size = new System.Drawing.Size(0, 13);
+            this.labelEwindowheader.TabIndex = 14;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(316, 64);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 13);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Plates";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(33, 437);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(75, 13);
+            this.label39.TabIndex = 24;
+            this.label39.Text = "2 Drop Gables";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(33, 404);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(54, 13);
+            this.label38.TabIndex = 23;
+            this.label38.Text = "4 Ladders";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(81, 375);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(84, 13);
+            this.label37.TabIndex = 22;
+            this.label37.Text = "Regular Trusses";
+            // 
+            // labelEtrusses
+            // 
+            this.labelEtrusses.AutoSize = true;
+            this.labelEtrusses.Location = new System.Drawing.Point(34, 375);
+            this.labelEtrusses.Name = "labelEtrusses";
+            this.labelEtrusses.Size = new System.Drawing.Size(41, 13);
+            this.labelEtrusses.TabIndex = 21;
+            this.labelEtrusses.Text = "label37";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(192, 64);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.TabIndex = 1;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripProgressBar1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 561);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1022, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            this.toolStripProgressBar1.Value = 100;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(828, 561);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(158, 22);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "About Garage Calculator";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MainPage
             // 
@@ -1117,10 +1118,10 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

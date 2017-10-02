@@ -513,6 +513,9 @@ namespace Garage_Calculator
         private void MainPage_Load(object sender, EventArgs e)
         {
             CBwaste.SelectedIndex = 0;
+            CBheight.SelectedIndex = 0;
+            CBstud.SelectedIndex = 0;
+            CBroofpitch.SelectedIndex = 0;
         }
 
         private void CBwaste_SelectedIndexChanged(object sender, EventArgs e)
