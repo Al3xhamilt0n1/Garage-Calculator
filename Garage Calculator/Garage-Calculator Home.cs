@@ -112,6 +112,9 @@ namespace Garage_Calculator
         double extraDheader = 0.66;
         double extraGheader = 0.66;
         double plysize = 32;
+        double rollventlegnth = 20;
+        double steelwidth = 36;
+
 
         //estiamte
         double Estuds;
@@ -169,6 +172,22 @@ namespace Garage_Calculator
         double rooffactor;
         double Eroofply;
 
+        //Shingles
+        double eaves;
+        double lfperbundle = 35;
+        double capshingle;
+        double Ecapshingle;
+        double rollvent;
+        double Erollvent;
+
+        //Steel Roof
+        double eaveinches;
+        double ridgeinches;
+        double side1;
+        double side2;
+        double angle;
+        double steelsheets;
+
 
         public MainPage()
         {
@@ -213,35 +232,34 @@ namespace Garage_Calculator
             // Height Selection
             if (CBheight.SelectedItem.ToString() == "8'")
             {
-                debugheight.Text = "8 Foot";
                 height = 8;
                 studheight = "8'";
             }
 
             if (CBheight.SelectedItem.ToString() == "10'")
             {
-                debugheight.Text = "10 Foot";
+
                 height = 10;
                 studheight = "10'";
             }
 
             if (CBheight.SelectedItem.ToString() == "12'")
             {
-                debugheight.Text = "12 Foot";
+
                 height = 12;
                 studheight = "12'";
             }
 
             if (CBheight.SelectedItem.ToString() == "14'")
             {
-                debugheight.Text = "14 Foot";
+
                 height = 14;
                 studheight = "14'";
             }
 
             if (CBheight.SelectedItem.ToString() == "16'")
             {
-                debugheight.Text = "16 Foot";
+
                 height = 16;
                 studheight = "16'";
             }
@@ -254,21 +272,20 @@ namespace Garage_Calculator
             // Wall Stud Selection
             if (CBstud.SelectedItem.ToString() == "2x4")
             {
-                debugstuds.Text = "2x4";
                 studssize = "2x4";
                 studs = 4;
             }
 
             if (CBstud.SelectedItem.ToString() == "2x6")
             {
-                debugstuds.Text = "2x6";
+
                 studssize = "2x6";
                 studs = 6;
             }
 
             if (CBstud.SelectedItem.ToString() == "2x8")
             {
-                debugstuds.Text = "2x8";
+
                 studssize = "2x8";
                 studs = 8;
             }
@@ -277,62 +294,62 @@ namespace Garage_Calculator
             //Roof Pitch
             if (CBroofpitch.SelectedItem.ToString() == "1/12")
             {
-                debugpitch.Text = "1/12";
+                angle = 4.78;
                 pitch = 1;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "2/12")
             {
-                debugpitch.Text = "2/12";
+                angle = 9.46;
                 pitch = 2;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "3/12")
             {
-                debugpitch.Text = "3/12";
+
                 pitch = 3;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "4/12")
             {
-                debugpitch.Text = "4/12";
+
                 pitch = 4;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "5/12")
             {
-                debugpitch.Text = "5/12";
+
                 pitch = 5;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "6/12")
             {
-                debugpitch.Text = "6/12";
+ 
                 pitch = 6;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "7/12")
             {
-                debugpitch.Text = "7/12";
+
                 pitch = 7;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "8/12")
             {
-                debugpitch.Text = "8/12";
+
                 pitch = 8;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "9/12")
             {
-                debugpitch.Text = "9/12";
+
                 pitch = 9;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "10/12")
             {
-                debugpitch.Text = "10/12";
+   
                 pitch = 10;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "11/12")
             {
-                debugpitch.Text = "11/12";
+
                 pitch = 11;
             }
             else if (CBroofpitch.SelectedItem.ToString() == "12/12")
             {
-                debugpitch.Text = "12/12";
+
                 pitch = 12;
             }
 
@@ -406,6 +423,17 @@ namespace Garage_Calculator
             double Etrusses = legnth / 2;
 
             //Roof
+            double widthin = width * 12;
+            double legnthin = legnth * 12;
+            side1 = widthin / 2;
+            side2 = gableheight;
+
+            double side3 = Math.Sqrt(side1 * side1 + side2 * side2 - 2 * side1 * side2 * Math.Cos(angle * (Math.PI / 180)));
+
+            int Rsteellegnth = Convert.ToInt32(side3);
+
+
+            ridgeinches = legnth * 12;
             overhang4x = overhang + overhang + overhang + overhang;
             subfascia = perimiter + overhang4x;
             subfasciaw = subfascia * waste;
@@ -472,12 +500,8 @@ namespace Garage_Calculator
 
 
 
-            //SetDebug Labels
-            debugwidth.Text = Convert.ToString(width);
-           debuglegnth.Text = Convert.ToString(legnth);
-           debugheightt.Text = Convert.ToString(height);
-           debugoverhang.Text = Convert.ToString(overhangin);
-           debugoverhangfoot.Text = overhang.ToString("F2");
+           
+
            labelEstuds.Text = Convert.ToString(perimiter);
 
             //Calculation
@@ -510,8 +534,48 @@ namespace Garage_Calculator
             int RtotalGarageheader = Convert.ToInt32(WGarageheader);
 
 
-            // Esitmate 
-            labelEstudheight.Text = studheight;
+            // If shingles Selected
+            if (CBroofing.SelectedItem.ToString() == "Shingles")
+            {
+                labelErooftype.Text = "Bundle Of Shingles";
+                labelEroofingamount.Text = Convert.ToString(Rroofply);
+                eaves = legnth + overhang + legnth + overhang;
+                labelEeave.Text = Convert.ToString(eaves);
+                capshingle = legnth + overhang;
+                Ecapshingle = capshingle / lfperbundle;
+                int Rcapshingle = Convert.ToInt32(Ecapshingle);
+                labelEcaptype.Text = "Bundles of Cap Shingles";
+             
+                labelEcapshingles.Text = Convert.ToString(Rcapshingle);
+                labelEridgeventtype.Text = "Rolls 20' Rollvent";
+                rollvent = legnth / rollventlegnth;
+                int Rrollvent = Convert.ToInt32(rollvent);
+                labelEshinglestarter.Text = "LF Starter Shingle";
+                labelErollvent.Text = Convert.ToString(Rrollvent);
+              
+            }
+
+            // If Steel Roofing Selected
+            if (CBroofing.SelectedItem.ToString() == "Steel 36 Inch")
+            {
+               steelsheets = legnthin / steelwidth;
+                int Rsteelsheets = Convert.ToInt32(steelsheets);
+
+               
+
+                labelErooftype.Text = Convert.ToString(Rsteellegnth);
+
+                labelEroofingamount.Text = Convert.ToString(Rsteelsheets);
+                labelesteel.Text = "Inch Sheets Of Steel";
+
+
+            }
+
+
+
+
+                // Esitmate 
+                labelEstudheight.Text = studheight;
             labelEstudsize.Text = studssize;
             labelEstudsize2.Text = studssize;
             labelEsillgasket.Text = Convert.ToString(Rsillgasket);
@@ -532,7 +596,7 @@ namespace Garage_Calculator
 
 
             //Test Label
-            debugtest.Text = Convert.ToString(rooffactor);
+            debugtest.Text = Convert.ToString(steelsheets);
 
 
 
@@ -573,6 +637,11 @@ namespace Garage_Calculator
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

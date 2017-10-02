@@ -80,19 +80,6 @@
             this.CBheight = new System.Windows.Forms.ComboBox();
             this.TBlegnth = new System.Windows.Forms.TextBox();
             this.TBwidth = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.debugpitch = new System.Windows.Forms.Label();
-            this.debugoverhangfoot = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.debugstuds = new System.Windows.Forms.Label();
-            this.debugoverhang = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.debugheight = new System.Windows.Forms.Label();
-            this.debugheightt = new System.Windows.Forms.Label();
-            this.debuglegnth = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.debugwidth = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label40 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -143,20 +130,32 @@
             this.label49 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelEroofingamount = new System.Windows.Forms.Label();
+            this.labelErooftype = new System.Windows.Forms.Label();
+            this.labelEeave = new System.Windows.Forms.Label();
+            this.labelEcaptype = new System.Windows.Forms.Label();
+            this.labelEcapshingles = new System.Windows.Forms.Label();
+            this.labelEridgeventtype = new System.Windows.Forms.Label();
+            this.labelErollvent = new System.Windows.Forms.Label();
+            this.labelEshinglestarter = new System.Windows.Forms.Label();
+            this.labelesteel = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.Main.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.Main);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -684,136 +683,6 @@
             this.TBwidth.TabIndex = 0;
             this.TBwidth.Text = "0";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.debugpitch);
-            this.tabPage2.Controls.Add(this.debugoverhangfoot);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.debugstuds);
-            this.tabPage2.Controls.Add(this.debugoverhang);
-            this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.debugheight);
-            this.tabPage2.Controls.Add(this.debugheightt);
-            this.tabPage2.Controls.Add(this.debuglegnth);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.debugwidth);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(990, 506);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Debug";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // debugpitch
-            // 
-            this.debugpitch.AutoSize = true;
-            this.debugpitch.Location = new System.Drawing.Point(65, 153);
-            this.debugpitch.Name = "debugpitch";
-            this.debugpitch.Size = new System.Drawing.Size(41, 13);
-            this.debugpitch.TabIndex = 11;
-            this.debugpitch.Text = "label10";
-            // 
-            // debugoverhangfoot
-            // 
-            this.debugoverhangfoot.AutoSize = true;
-            this.debugoverhangfoot.Location = new System.Drawing.Point(137, 99);
-            this.debugoverhangfoot.Name = "debugoverhangfoot";
-            this.debugoverhangfoot.Size = new System.Drawing.Size(35, 13);
-            this.debugoverhangfoot.TabIndex = 10;
-            this.debugoverhangfoot.Text = "label9";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 126);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "label7";
-            // 
-            // debugstuds
-            // 
-            this.debugstuds.AutoSize = true;
-            this.debugstuds.Location = new System.Drawing.Point(62, 126);
-            this.debugstuds.Name = "debugstuds";
-            this.debugstuds.Size = new System.Drawing.Size(35, 13);
-            this.debugstuds.TabIndex = 8;
-            this.debugstuds.Text = "label7";
-            // 
-            // debugoverhang
-            // 
-            this.debugoverhang.AutoSize = true;
-            this.debugoverhang.Location = new System.Drawing.Point(62, 99);
-            this.debugoverhang.Name = "debugoverhang";
-            this.debugoverhang.Size = new System.Drawing.Size(41, 13);
-            this.debugoverhang.TabIndex = 7;
-            this.debugoverhang.Text = "label11";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 99);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "label12";
-            // 
-            // debugheight
-            // 
-            this.debugheight.AutoSize = true;
-            this.debugheight.Location = new System.Drawing.Point(62, 71);
-            this.debugheight.Name = "debugheight";
-            this.debugheight.Size = new System.Drawing.Size(35, 13);
-            this.debugheight.TabIndex = 5;
-            this.debugheight.Text = "label9";
-            // 
-            // debugheightt
-            // 
-            this.debugheightt.AutoSize = true;
-            this.debugheightt.Location = new System.Drawing.Point(6, 71);
-            this.debugheightt.Name = "debugheightt";
-            this.debugheightt.Size = new System.Drawing.Size(41, 13);
-            this.debugheightt.TabIndex = 4;
-            this.debugheightt.Text = "label10";
-            // 
-            // debuglegnth
-            // 
-            this.debuglegnth.AutoSize = true;
-            this.debuglegnth.Location = new System.Drawing.Point(62, 43);
-            this.debuglegnth.Name = "debuglegnth";
-            this.debuglegnth.Size = new System.Drawing.Size(35, 13);
-            this.debuglegnth.TabIndex = 3;
-            this.debuglegnth.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 43);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "label8";
-            // 
-            // debugwidth
-            // 
-            this.debugwidth.AutoSize = true;
-            this.debugwidth.Location = new System.Drawing.Point(62, 15);
-            this.debugwidth.Name = "debugwidth";
-            this.debugwidth.Size = new System.Drawing.Size(35, 13);
-            this.debugwidth.TabIndex = 1;
-            this.debugwidth.Text = "label6";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "label5";
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.label22);
@@ -1138,7 +1007,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label39, 3, 2);
             this.tableLayoutPanel2.Controls.Add(this.labelEtrusses, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.labelEroofply, 0, 4);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(9, 288);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(531, 50);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -1154,7 +1023,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(191, 244);
+            this.label22.Location = new System.Drawing.Point(705, 6);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(48, 20);
             this.label22.TabIndex = 28;
@@ -1217,7 +1086,7 @@
             this.CBroofing.FormattingEnabled = true;
             this.CBroofing.Items.AddRange(new object[] {
             "Shingles",
-            "Steel"});
+            "Steel 36 Inch"});
             this.CBroofing.Location = new System.Drawing.Point(93, 245);
             this.CBroofing.Name = "CBroofing";
             this.CBroofing.Size = new System.Drawing.Size(121, 21);
@@ -1319,6 +1188,125 @@
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 68;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.tableLayoutPanel3);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(990, 506);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Roofing Estimate";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel3.ColumnCount = 4;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel3.Controls.Add(this.labelesteel, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.labelEcapshingles, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.labelEcaptype, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.labelEroofingamount, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.labelErooftype, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.labelEeave, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.labelEridgeventtype, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.labelErollvent, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.labelEshinglestarter, 1, 1);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(25, 20);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 6;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(605, 156);
+            this.tableLayoutPanel3.TabIndex = 0;
+            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
+            // 
+            // labelEroofingamount
+            // 
+            this.labelEroofingamount.AutoSize = true;
+            this.labelEroofingamount.Location = new System.Drawing.Point(4, 1);
+            this.labelEroofingamount.Name = "labelEroofingamount";
+            this.labelEroofingamount.Size = new System.Drawing.Size(35, 13);
+            this.labelEroofingamount.TabIndex = 1;
+            this.labelEroofingamount.Text = "label5";
+            // 
+            // labelErooftype
+            // 
+            this.labelErooftype.AutoSize = true;
+            this.labelErooftype.Location = new System.Drawing.Point(125, 1);
+            this.labelErooftype.Name = "labelErooftype";
+            this.labelErooftype.Size = new System.Drawing.Size(0, 13);
+            this.labelErooftype.TabIndex = 0;
+            // 
+            // labelEeave
+            // 
+            this.labelEeave.AutoSize = true;
+            this.labelEeave.Location = new System.Drawing.Point(4, 22);
+            this.labelEeave.Name = "labelEeave";
+            this.labelEeave.Size = new System.Drawing.Size(60, 13);
+            this.labelEeave.TabIndex = 2;
+            this.labelEeave.Text = "labelEeave";
+            // 
+            // labelEcaptype
+            // 
+            this.labelEcaptype.AutoSize = true;
+            this.labelEcaptype.Location = new System.Drawing.Point(125, 43);
+            this.labelEcaptype.Name = "labelEcaptype";
+            this.labelEcaptype.Size = new System.Drawing.Size(13, 13);
+            this.labelEcaptype.TabIndex = 1;
+            this.labelEcaptype.Text = "e";
+            // 
+            // labelEcapshingles
+            // 
+            this.labelEcapshingles.AutoSize = true;
+            this.labelEcapshingles.Location = new System.Drawing.Point(4, 43);
+            this.labelEcapshingles.Name = "labelEcapshingles";
+            this.labelEcapshingles.Size = new System.Drawing.Size(35, 13);
+            this.labelEcapshingles.TabIndex = 1;
+            this.labelEcapshingles.Text = "label8";
+            // 
+            // labelEridgeventtype
+            // 
+            this.labelEridgeventtype.AutoSize = true;
+            this.labelEridgeventtype.Location = new System.Drawing.Point(125, 64);
+            this.labelEridgeventtype.Name = "labelEridgeventtype";
+            this.labelEridgeventtype.Size = new System.Drawing.Size(0, 13);
+            this.labelEridgeventtype.TabIndex = 4;
+            // 
+            // labelErollvent
+            // 
+            this.labelErollvent.AutoSize = true;
+            this.labelErollvent.Location = new System.Drawing.Point(4, 64);
+            this.labelErollvent.Name = "labelErollvent";
+            this.labelErollvent.Size = new System.Drawing.Size(70, 13);
+            this.labelErollvent.TabIndex = 5;
+            this.labelErollvent.Text = "labelErollvent";
+            // 
+            // labelEshinglestarter
+            // 
+            this.labelEshinglestarter.AutoSize = true;
+            this.labelEshinglestarter.Location = new System.Drawing.Point(125, 22);
+            this.labelEshinglestarter.Name = "labelEshinglestarter";
+            this.labelEshinglestarter.Size = new System.Drawing.Size(0, 13);
+            this.labelEshinglestarter.TabIndex = 1;
+            // 
+            // labelesteel
+            // 
+            this.labelesteel.AutoSize = true;
+            this.labelesteel.Location = new System.Drawing.Point(246, 1);
+            this.labelesteel.Name = "labelesteel";
+            this.labelesteel.Size = new System.Drawing.Size(58, 13);
+            this.labelesteel.TabIndex = 1;
+            this.labelesteel.Text = "labelEsteel";
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1334,8 +1322,6 @@
             this.tabControl1.ResumeLayout(false);
             this.Main.ResumeLayout(false);
             this.Main.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -1344,6 +1330,9 @@
             this.statusStrip1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1359,29 +1348,16 @@
         private System.Windows.Forms.ComboBox CBheight;
         private System.Windows.Forms.TextBox TBlegnth;
         private System.Windows.Forms.TextBox TBwidth;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label debugoverhang;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label debugheight;
-        private System.Windows.Forms.Label debugheightt;
-        private System.Windows.Forms.Label debuglegnth;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label debugwidth;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox CBstud;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label debugstuds;
-        private System.Windows.Forms.Label debugoverhangfoot;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox CBroofpitch;
-        private System.Windows.Forms.Label debugpitch;
         private System.Windows.Forms.Label labelEstuds;
         private System.Windows.Forms.Label labelEstudsize;
         private System.Windows.Forms.Label label10;
@@ -1465,6 +1441,17 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label labelEroofingamount;
+        private System.Windows.Forms.Label labelErooftype;
+        private System.Windows.Forms.Label labelEeave;
+        private System.Windows.Forms.Label labelEcapshingles;
+        private System.Windows.Forms.Label labelEcaptype;
+        private System.Windows.Forms.Label labelEridgeventtype;
+        private System.Windows.Forms.Label labelErollvent;
+        private System.Windows.Forms.Label labelEshinglestarter;
+        private System.Windows.Forms.Label labelesteel;
     }
 }
 
