@@ -152,9 +152,23 @@ namespace Garage_Calculator
         double wallandgable;
         double doorwindowarea;
         double halfdoorwindowarea;
-
         double wallareafinal;
-     
+
+        //Roof Areas
+        double legnthwov;
+        double widthov;
+        double subfascia;
+        double overhang4x;
+        double subfasciaw;
+
+        double roofside1;
+        double roofside2;
+        double roofareabefore;
+        double roofareaafter;
+        double roofareafinal;
+        double rooffactor;
+        double Eroofply;
+
 
         public MainPage()
         {
@@ -235,6 +249,7 @@ namespace Garage_Calculator
             //OverHang
             overhangin = Convert.ToInt32(TBoverhang.Text);
             overhang = overhangin / 12;
+
 
             // Wall Stud Selection
             if (CBstud.SelectedItem.ToString() == "2x4")
@@ -390,6 +405,70 @@ namespace Garage_Calculator
             //Trusses
             double Etrusses = legnth / 2;
 
+            //Roof
+            overhang4x = overhang + overhang + overhang + overhang;
+            subfascia = perimiter + overhang4x;
+            subfasciaw = subfascia * waste;
+            int Rsubfascia = Convert.ToInt32(subfasciaw);
+
+            roofside1 = legnth + overhang + overhang;
+            roofside2 = width + overhang + overhang;
+            roofareabefore = roofside1 * roofside2;
+            roofareaafter = roofareabefore * waste;
+
+            if (pitch == 1)
+            {
+                rooffactor = 1.0033;
+            }
+            else if (pitch == 2)
+            {
+                rooffactor = 1.0138;
+            }
+            else if (pitch == 3)
+            {
+                rooffactor = 1.0308;
+            }
+            else if (pitch == 4)
+            {
+                rooffactor = 1.0541;
+            }
+            else if (pitch == 5)
+            {
+                rooffactor = 1.0833;
+            }
+            else if (pitch == 6)
+            {
+                rooffactor = 1.1180;
+            }
+            else if (pitch == 7)
+            {
+                rooffactor = 1.1577;
+            }
+            else if (pitch == 8)
+            {
+                rooffactor = 1.2019;
+            }
+            else if (pitch == 9)
+            {
+                rooffactor = 1.2500;
+            }
+            else if (pitch == 10)
+            {
+                rooffactor = 1.3017;
+            }
+            else if (pitch == 11)
+            {
+                rooffactor = 1.3566;
+            }
+            else if (pitch == 12)
+            {
+                rooffactor = 1.4142;
+            }
+
+
+            roofareafinal = roofareaafter * rooffactor;
+            Eroofply = roofareafinal / plysize;
+            int Rroofply = Convert.ToInt32(Eroofply);
 
 
 
@@ -445,42 +524,21 @@ namespace Garage_Calculator
             labelEgarageheader.Text = Convert.ToString(RtotalGarageheader);
             labelEwallply.Text = Convert.ToString(Rwallply);
             labelEtrusses.Text = Convert.ToString(Etrusses);
+            labelEsubfascia.Text = Convert.ToString(Rsubfascia);
+            labelEroofply.Text = Convert.ToString(Rroofply);
 
 
 
 
 
             //Test Label
-            debugtest.Text = Convert.ToString(Ewallply);
+            debugtest.Text = Convert.ToString(rooffactor);
 
 
 
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void trackBar1_Scroll(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -491,25 +549,6 @@ namespace Garage_Calculator
             settingsForm.Show();
         }
 
-        private void TBW1width_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TBwidth_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void MainPage_Load(object sender, EventArgs e)
         {
@@ -517,6 +556,8 @@ namespace Garage_Calculator
             CBheight.SelectedIndex = 0;
             CBstud.SelectedIndex = 0;
             CBroofpitch.SelectedIndex = 0;
+            CBsiding.SelectedIndex = 0;
+            CBroofing.SelectedIndex = 0;
         }
 
         private void CBwaste_SelectedIndexChanged(object sender, EventArgs e)
@@ -529,6 +570,11 @@ namespace Garage_Calculator
             { waste = 1.10; }
             if (CBwaste.SelectedItem.ToString() == "15%")
             { waste = 1.15; }
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     }

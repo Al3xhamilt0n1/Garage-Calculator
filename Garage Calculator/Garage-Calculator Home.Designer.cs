@@ -124,12 +124,32 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.button2 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.labelEsubfascia = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.labelEroofply = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.CBroofing = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.CBsiding = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -145,6 +165,17 @@
             // 
             // Main
             // 
+            this.Main.Controls.Add(this.comboBox3);
+            this.Main.Controls.Add(this.comboBox2);
+            this.Main.Controls.Add(this.label49);
+            this.Main.Controls.Add(this.label48);
+            this.Main.Controls.Add(this.comboBox1);
+            this.Main.Controls.Add(this.label47);
+            this.Main.Controls.Add(this.CBsiding);
+            this.Main.Controls.Add(this.label46);
+            this.Main.Controls.Add(this.label45);
+            this.Main.Controls.Add(this.label44);
+            this.Main.Controls.Add(this.CBroofing);
             this.Main.Controls.Add(this.CBwaste);
             this.Main.Controls.Add(this.label36);
             this.Main.Controls.Add(this.label35);
@@ -201,7 +232,6 @@
             this.Main.TabIndex = 0;
             this.Main.Text = "Main";
             this.Main.UseVisualStyleBackColor = true;
-            this.Main.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // CBwaste
             // 
@@ -318,7 +348,6 @@
             this.label21.Size = new System.Drawing.Size(78, 13);
             this.label21.TabIndex = 44;
             this.label21.Text = "Waste Percent";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // TBG2height
             // 
@@ -506,7 +535,6 @@
             this.TBW1width.Size = new System.Drawing.Size(50, 20);
             this.TBW1width.TabIndex = 14;
             this.TBW1width.Text = "0";
-            this.TBW1width.TextChanged += new System.EventHandler(this.TBW1width_TextChanged);
             // 
             // debugtest
             // 
@@ -569,7 +597,6 @@
             this.CBstud.Size = new System.Drawing.Size(100, 21);
             this.CBstud.TabIndex = 9;
             this.CBstud.Text = "Wall Studs";
-            this.CBstud.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -656,7 +683,6 @@
             this.TBwidth.Size = new System.Drawing.Size(100, 20);
             this.TBwidth.TabIndex = 0;
             this.TBwidth.Text = "0";
-            this.TBwidth.TextChanged += new System.EventHandler(this.TBwidth_TextChanged);
             // 
             // tabPage2
             // 
@@ -790,12 +816,10 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label22);
+            this.tabPage3.Controls.Add(this.tableLayoutPanel2);
             this.tabPage3.Controls.Add(this.label40);
             this.tabPage3.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage3.Controls.Add(this.label39);
-            this.tabPage3.Controls.Add(this.label38);
-            this.tabPage3.Controls.Add(this.label37);
-            this.tabPage3.Controls.Add(this.labelEtrusses);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -858,7 +882,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(417, 169);
             this.tableLayoutPanel1.TabIndex = 25;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // labelEwallply
             // 
@@ -1027,30 +1050,29 @@
             this.label13.Size = new System.Drawing.Size(36, 13);
             this.label13.TabIndex = 6;
             this.label13.Text = "Plates";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(33, 437);
+            this.label39.Location = new System.Drawing.Point(316, 43);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(75, 13);
+            this.label39.Size = new System.Drawing.Size(66, 13);
             this.label39.TabIndex = 24;
-            this.label39.Text = "2 Drop Gables";
+            this.label39.Text = "Drop Gables";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(33, 404);
+            this.label38.Location = new System.Drawing.Point(316, 22);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(54, 13);
+            this.label38.Size = new System.Drawing.Size(45, 13);
             this.label38.TabIndex = 23;
-            this.label38.Text = "4 Ladders";
+            this.label38.Text = "Ladders";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(81, 375);
+            this.label37.Location = new System.Drawing.Point(316, 1);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(84, 13);
             this.label37.TabIndex = 22;
@@ -1059,11 +1081,10 @@
             // labelEtrusses
             // 
             this.labelEtrusses.AutoSize = true;
-            this.labelEtrusses.Location = new System.Drawing.Point(34, 375);
+            this.labelEtrusses.Location = new System.Drawing.Point(4, 1);
             this.labelEtrusses.Name = "labelEtrusses";
-            this.labelEtrusses.Size = new System.Drawing.Size(41, 13);
+            this.labelEtrusses.Size = new System.Drawing.Size(0, 13);
             this.labelEtrusses.TabIndex = 21;
-            this.labelEtrusses.Text = "label37";
             // 
             // label10
             // 
@@ -1099,6 +1120,205 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel2.Controls.Add(this.label43, 3, 4);
+            this.tableLayoutPanel2.Controls.Add(this.label42, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label41, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelEsubfascia, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label23, 3, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label37, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label38, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label39, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelEtrusses, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.labelEroofply, 0, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(9, 288);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(417, 106);
+            this.tableLayoutPanel2.TabIndex = 27;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(191, 244);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(48, 20);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "Roof";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(316, 64);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(69, 13);
+            this.label23.TabIndex = 29;
+            this.label23.Text = "LF Subfascia";
+            // 
+            // labelEsubfascia
+            // 
+            this.labelEsubfascia.AutoSize = true;
+            this.labelEsubfascia.Location = new System.Drawing.Point(4, 64);
+            this.labelEsubfascia.Name = "labelEsubfascia";
+            this.labelEsubfascia.Size = new System.Drawing.Size(0, 13);
+            this.labelEsubfascia.TabIndex = 29;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(4, 22);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(13, 13);
+            this.label41.TabIndex = 29;
+            this.label41.Text = "4";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(4, 43);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(13, 13);
+            this.label42.TabIndex = 29;
+            this.label42.Text = "2";
+            // 
+            // labelEroofply
+            // 
+            this.labelEroofply.AutoSize = true;
+            this.labelEroofply.Location = new System.Drawing.Point(4, 85);
+            this.labelEroofply.Name = "labelEroofply";
+            this.labelEroofply.Size = new System.Drawing.Size(0, 13);
+            this.labelEroofply.TabIndex = 30;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(316, 85);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(83, 13);
+            this.label43.TabIndex = 29;
+            this.label43.Text = "Sheets Roof Ply";
+            // 
+            // CBroofing
+            // 
+            this.CBroofing.FormattingEnabled = true;
+            this.CBroofing.Items.AddRange(new object[] {
+            "Shingles",
+            "Steel"});
+            this.CBroofing.Location = new System.Drawing.Point(93, 245);
+            this.CBroofing.Name = "CBroofing";
+            this.CBroofing.Size = new System.Drawing.Size(121, 21);
+            this.CBroofing.TabIndex = 58;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(90, 213);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(81, 13);
+            this.label44.TabIndex = 59;
+            this.label44.Text = "Custom Options";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(3, 253);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(84, 13);
+            this.label45.TabIndex = 60;
+            this.label45.Text = "Roofing Material";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(3, 291);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(36, 13);
+            this.label46.TabIndex = 61;
+            this.label46.Text = "Siding";
+            // 
+            // CBsiding
+            // 
+            this.CBsiding.Enabled = false;
+            this.CBsiding.FormattingEnabled = true;
+            this.CBsiding.Items.AddRange(new object[] {
+            "Vinyl",
+            "Wood 6 Inch",
+            "Wood 8 Inch"});
+            this.CBsiding.Location = new System.Drawing.Point(93, 288);
+            this.CBsiding.Name = "CBsiding";
+            this.CBsiding.Size = new System.Drawing.Size(121, 21);
+            this.CBsiding.TabIndex = 62;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(3, 325);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(67, 13);
+            this.label47.TabIndex = 63;
+            this.label47.Text = "Fascia/Soffit";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Enabled = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(93, 325);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 64;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(3, 370);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(69, 13);
+            this.label48.TabIndex = 65;
+            this.label48.Text = "Interior Finish";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(3, 415);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(52, 13);
+            this.label49.TabIndex = 66;
+            this.label49.Text = "Insulation";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Enabled = false;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.IntegralHeight = false;
+            this.comboBox2.Location = new System.Drawing.Point(93, 370);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 67;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Enabled = false;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.IntegralHeight = false;
+            this.comboBox3.Location = new System.Drawing.Point(93, 415);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 68;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1122,6 +1342,8 @@
             this.tableLayoutPanel1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1224,6 +1446,25 @@
         private System.Windows.Forms.Label labelEwallply;
         private System.Windows.Forms.Label labelEgarageheader;
         private System.Windows.Forms.Label labelEdoorheader;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label labelEsubfascia;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label labelEroofply;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.ComboBox CBsiding;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.ComboBox CBroofing;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label47;
     }
 }
 
